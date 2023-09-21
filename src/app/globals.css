@@ -35,3 +35,17 @@ body {
 .blueTextColor{
   color:#104259;
 }
+
+.switchColor{
+  color: #F6AD2B;
+  background-color : #104259;
+}
+
+.switchColor:hover{
+  background-color: #F6AD2B;
+  color : #104259;
+}
+
+.backgroundColor{
+  background-color: #EDEDED;
+}
