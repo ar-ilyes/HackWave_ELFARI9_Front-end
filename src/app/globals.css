@@ -17,11 +17,21 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  
+}
+
+.blueColor{
+  background-color: #104259;
+}
+
+.yellowTextColor{
+  color:#F6AD2B;
+}
+
+.yellowBorderColor{
+  border-color: #F6AD2B;
+}
+
+.blueTextColor{
+  color:#104259;
 }
