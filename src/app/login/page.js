@@ -3,6 +3,7 @@ import Image from 'next/image';
 import logo from '../assets/logo.png';
 import loginImage from "../assets/loginImage.png"
 import gmailLogo from "../assets/gmail.png"
+import Link from 'next/link';
 export default function Login() {
     //on submit make a request with formData to the backend
     const onSubmit = async (e) => {
@@ -29,7 +30,7 @@ export default function Login() {
     return (
     <main className="w-full h-full backgroundColor">
         <div className='w-full blueColor flex flex-row items-center justify-between absolute'>
-            <Image src={logo} className='mx-5 my-1'></Image>
+        <Link href="/"><Image src={logo} className='mx-5 my-1'></Image></Link>
             
         </div>
         <div className=' container flex flex-row h-screen'>
