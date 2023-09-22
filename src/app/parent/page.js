@@ -40,7 +40,9 @@ export default function Parent() {
                         <p> L2 </p>
                     </div>
                 </div>
-                <button className=" font-bold rounded-lg border-cyan-900 text-cyan-900 border-solid border py-1 px-3 relative left-1/2"> <Link href="/parent/children"> see more </Link> </button>
+                <div className="width-full flex justify-center">
+                <button className=" font-bold rounded-lg border-cyan-900 text-cyan-900 border-solid border py-1 px-3 relative"> <Link href="/parent/children"> see more </Link> </button>
+                </div>
             </div>
             <div className=" secondBlue rounded-lg py-4 px-10 h-2/5 space-y-2 w-3/5" >
                 <h1 className=" blueTextColor font-extrabold text-2xl pl-10 ">chatrooms</h1>

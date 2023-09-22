@@ -6,7 +6,9 @@ import Link from 'next/link';
 export default function SingleSubject() {
     return (
     <main className="w-full h-full backgroundColor">
-        <div className=' rounded-full h-12 w-12 blueColor absolute right-10 top-7'></div>
+        <div className=' rounded-full h-12 w-12 blueColor absolute right-10 top-7'>
+        <svg className='m-auto mt-3' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="white" d="M4 8a6 6 0 0 1 4.03-5.67a2 2 0 1 1 3.95 0A6 6 0 0 1 16 8v6l3 2v1H1v-1l3-2V8zm8 10a2 2 0 1 1-4 0h4z"/></svg>
+        </div>
         <div className=" flex flex-row h-screen w-screen">
             <div className=' basis-1/5 blueColor flex flex-col justify-center items-center space-y-10 '>
                 {/* <Image src={logo}></Image> */}
@@ -38,20 +40,20 @@ export default function SingleSubject() {
                     <div className="flex flex-row space-x-7">
                         <div className=" flex flex-col space-y-2 justify-center items-center">
                             <h1 className=" font-black text-2xl blueTextColor">Courses</h1>
-                            <div className=" rounded-lg shadow-lg bg-white space-y-2 flex flex-col px-12 py-4 ">
+                            <div className=" rounded-lg shadow-lg bg-white space-y-2 flex flex-col px-12 py-4  overflow-y-scroll">
                                 <div className=" flex flex-row space-x-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
-                                    <a href="#" className=" font-bold blueTextColor text-lg">course-1</a>
+                                    <a href="#" className=" font-bold blueTextColor text-lg">  HTML</a>
                                 </div>
                                 <hr className="border border-solid border-black w-full"></hr>
                                 <div className=" flex flex-row space-x-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
-                                    <a href="#" className=" font-bold blueTextColor text-lg">course-2</a>
+                                    <a href="#" className=" font-bold blueTextColor text-lg">  CSS</a>
                                 </div>
                                 <hr className="border border-solid border-black w-full"></hr>
                                 <div className=" flex flex-row space-x-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
-                                    <a href="#" className=" font-bold blueTextColor text-lg">course-3</a>
+                                    <a href="#" className=" font-bold blueTextColor text-lg">  JavaScript</a>
                                 </div>
 
                             </div>
@@ -59,20 +61,20 @@ export default function SingleSubject() {
 
                         <div className=" flex flex-col space-y-2 justify-center items-center">
                             <h1 className=" font-black text-2xl blueTextColor">homeworks</h1>
-                            <div className=" rounded-lg shadow-lg bg-white space-y-2 flex flex-col  px-12 py-4 ">
+                            <div className=" rounded-lg shadow-lg bg-white space-y-2 flex flex-col  px-12 py-4  overflow-y-scroll">
                                 <div className=" flex flex-row space-x-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
-                                    <a href="#" className=" font-bold blueTextColor text-lg ">Homework-1</a>
+                                    <a href="#" className=" font-bold blueTextColor text-lg ">TP-HTML</a>
                                 </div>
                                 <hr className="border border-solid border-black w-full"></hr>
                                 <div className=" flex flex-row space-x-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
-                                    <a href="#" className=" font-bold blueTextColor text-lg">Homework-2</a>
+                                    <a href="#" className=" font-bold blueTextColor text-lg">TP-CSS</a>
                                 </div>
                                 <hr className="border border-solid border-black w-full"></hr>
                                 <div className=" flex flex-row space-x-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
-                                    <a href="#" className=" font-bold blueTextColor text-lg">Homework-3</a>
+                                    <a href="#" className=" font-bold blueTextColor text-lg">TP-JS</a>
                                 </div>
 
                             </div>
@@ -80,20 +82,20 @@ export default function SingleSubject() {
 
                         <div className=" flex flex-col space-y-2 justify-center items-center">
                             <h1 className=" font-black text-2xl blueTextColor">exams</h1>
-                            <div className=" rounded-lg shadow-lg bg-white space-y-2 flex flex-col px-12 py-4 ">
+                            <div className=" rounded-lg shadow-lg bg-white space-y-2 flex flex-col px-12 py-4 overflow-y-scroll ">
                                 <div className=" flex flex-row space-x-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
-                                    <a href="#" className=" font-bold blueTextColor text-lg">exam -1</a>
+                                    <a href="#" className=" font-bold blueTextColor text-lg">Mid Term</a>
                                 </div>
                                 <hr className="border border-solid border-black w-full"></hr>
                                 <div className=" flex flex-row space-x-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
-                                    <a href="#" className=" font-bold blueTextColor text-lg">exam -2</a>
+                                    <a href="#" className=" font-bold blueTextColor text-lg">Interrogation</a>
                                 </div>
                                 <hr className="border border-solid border-black w-full"></hr>
                                 <div className=" flex flex-row space-x-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/></svg>
-                                    <a href="#" className=" font-bold blueTextColor text-lg">exam -3</a>
+                                    <a href="#" className=" font-bold blueTextColor text-lg">Final Term</a>
                                 </div>
 
                             </div>

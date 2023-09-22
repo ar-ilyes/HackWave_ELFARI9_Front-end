@@ -6,7 +6,9 @@ import Link from 'next/link';
 export default function Subject() {
     return (
     <main className="w-full h-full backgroundColor">
-        <div className=' rounded-full h-12 w-12 blueColor absolute right-10 top-7'></div>
+        <div className=' rounded-full h-12 w-12 blueColor absolute right-10 top-7'>
+        <svg className='m-auto mt-3' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="white" d="M4 8a6 6 0 0 1 4.03-5.67a2 2 0 1 1 3.95 0A6 6 0 0 1 16 8v6l3 2v1H1v-1l3-2V8zm8 10a2 2 0 1 1-4 0h4z"/></svg>
+        </div>
         <div className=" flex flex-row h-screen w-screen">
             <div className=' basis-1/5 blueColor flex flex-col justify-center items-center space-y-10 '>
                 {/* <Image src={logo}></Image> */}
@@ -66,6 +68,122 @@ export default function Subject() {
                         </svg>
                         </button>
                     </a>
+
+                    
+                    </div>
+                </div>
+                <div class=" m-auto relative gradientBg mt-6 flex w-4/6 flex-col rounded-xl  text-gray-700 shadow-md">
+                    <div class="p-6">
+                    <h5 class="mb-2 block underline  font-sans text-xl font-bold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                        Mathematiques
+                    </h5>
+                    </div>
+                    <div class="p-6 pt-0 flex flex-row justify-end">
+                    <a
+                        class="!font-medium !text-blue-gray-900 !transition-colors hover:!text-pink-500"
+                        href="/student/subjects/1"
+                    >
+                        <button
+                        class="flex select-none items-center gap-2 rounded-lg py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-blue-500 transition-all bg-blue-500/10 hover:bg-blue-600/10 active:bg-blue-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                        type="button"
+                        data-ripple-dark="true"
+                        >
+                        <Link href="/student/subjects/1">details</Link>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            class="h-4 w-4"
+                        >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                        ></path>
+                        </svg>
+                        </button>
+                    </a>
+
+                    
+                    </div>
+                </div>
+                <div class=" m-auto relative gradientBg mt-6 flex w-4/6 flex-col rounded-xl  text-gray-700 shadow-md">
+                    <div class="p-6">
+                    <h5 class="mb-2 block underline  font-sans text-xl font-bold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                        Statistics
+                    </h5>
+                    </div>
+                    <div class="p-6 pt-0 flex flex-row justify-end">
+                    <a
+                        class="!font-medium !text-blue-gray-900 !transition-colors hover:!text-pink-500"
+                        href="/student/subjects/1"
+                    >
+                        <button
+                        class="flex select-none items-center gap-2 rounded-lg py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-blue-500 transition-all bg-blue-500/10 hover:bg-blue-600/10 active:bg-blue-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                        type="button"
+                        data-ripple-dark="true"
+                        >
+                        <Link href="/student/subjects/1">details</Link>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            class="h-4 w-4"
+                        >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                        ></path>
+                        </svg>
+                        </button>
+                    </a>
+
+                    
+                    </div>
+                </div>
+                <div class=" m-auto relative gradientBg mt-6 flex w-4/6 flex-col rounded-xl  text-gray-700 shadow-md">
+                    <div class="p-6">
+                    <h5 class="mb-2 block underline  font-sans text-xl font-bold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                        Operating Systems
+                    </h5>
+                    </div>
+                    <div class="p-6 pt-0 flex flex-row justify-end">
+                    <a
+                        class="!font-medium !text-blue-gray-900 !transition-colors hover:!text-pink-500"
+                        href="/student/subjects/1"
+                    >
+                        <button
+                        class="flex select-none items-center gap-2 rounded-lg py-2 px-4 text-center align-middle font-sans text-xs font-bold uppercase text-blue-500 transition-all bg-blue-500/10 hover:bg-blue-600/10 active:bg-blue-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                        type="button"
+                        data-ripple-dark="true"
+                        >
+                        <Link href="/student/subjects/1">details</Link>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="2"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            class="h-4 w-4"
+                        >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                        ></path>
+                        </svg>
+                        </button>
+                    </a>
+
+                    
                     </div>
                 </div>
 

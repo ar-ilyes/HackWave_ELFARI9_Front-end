@@ -10,19 +10,21 @@ export default function Student() {
     let scheduleData = [{
         salle:"salle 20",
         module:"math",
-        date:"12/12/2021",
+        date:"22/09/2023",
     },{
-        salle:"salle 20",
-        module:"math",
-        date:"12/12/2021",
+        salle:"salle 10",
+        module:"Statistics",
+        date:"22/09/2023",
     },{
-        salle:"salle 20",
-        module:"math",
-        date:"12/12/2021",
+        salle:"salle 03",
+        module:"databases",
+        date:"22/09/2023",
     }]
     return (
     <main className="w-full h-full backgroundColor">
-        <div className=' rounded-full h-12 w-12 blueColor absolute right-10 top-7'></div>
+        <div className=' rounded-full h-12 w-12 blueColor absolute right-10 top-7'>
+        <svg className='m-auto mt-3' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="white" d="M4 8a6 6 0 0 1 4.03-5.67a2 2 0 1 1 3.95 0A6 6 0 0 1 16 8v6l3 2v1H1v-1l3-2V8zm8 10a2 2 0 1 1-4 0h4z"/></svg>
+        </div>
         <div className=" flex flex-row h-screen w-screen">
             <div className=' basis-1/5 blueColor flex flex-col justify-center items-center space-y-10 '>
                 {/* <Image src={logo}></Image> */}
@@ -75,7 +77,7 @@ export default function Student() {
                             )
                         })}
                         </div>
-                        <button className=' px-5 py-2 bg-black shadow-md text-white font-semibold rounded-md '>Details</button>
+                        <button className=' px-5 py-2 bg-black shadow-md text-white font-semibold rounded-md '> <Link href="/student/timetable"> Details </Link></button>
                     </div>
                 </div>
                 <div className=' w-4/6  rounded-md  py-1 shadow-lg bg-white justify-between flex flex-col items-center px-2 space-y-4 pb-5'>
