@@ -10,13 +10,21 @@ export default function Login() {
         const formData = new FormData(e.target);
         const body = Object.fromEntries(formData);
         console.log(body);
+
         const res = await fetch('http://localhost:5000/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(body)
         });
-        const data = await res.json();
-        console.log(data);
+
+        if (res.status === 200) { // Assuming a successful login returns a 200 status
+            const data = await res.json();
+            console.log(data);
+
+            // Store the JWT token in an HTTP-only cookie
+            document.cookie = `jwtToken=${data.token}; path=/; HttpOnly`;
+
+        }
     }
     return (
     <main className="w-full h-full backgroundColor">
