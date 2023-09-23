@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation'
 import axios from 'utils/axios';
+import useAuth from '@/hooks/useAuth';
 
 // Assets
 import logo from '../assets/logo.png';
@@ -12,6 +13,7 @@ import gmailLogo from "../assets/gmail.png"
 // Page
 export default function Login() {
     const router = useRouter();
+    const { setUser } = useAuth();
 
     //on submit make a request with formData to the backend
     const onSubmit = async (e) => {
@@ -27,7 +29,7 @@ export default function Login() {
             const {firstName, lastName} = res.data.data;
 
             // store data in global state
-
+            setUser(res.data.data);
 
             // // Store the JWT token in an HTTP-only cookie
             // document.cookie = `jwtToken=${data.token}; path=/; HttpOnly`;
