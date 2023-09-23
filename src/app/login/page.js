@@ -17,6 +17,7 @@ export default function Login() {
 
     //on submit make a request with formData to the backend
     const onSubmit = async (e) => {
+        
         e.preventDefault();
         const formData = new FormData(e.target);
         const body = Object.fromEntries(formData);

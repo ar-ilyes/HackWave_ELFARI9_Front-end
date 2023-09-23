@@ -21,32 +21,32 @@ import {
     PopoverTrigger,
     } from "@/components/ui/popover"
 
-export default function StudentsManage() {
-    const teachers = [{
-        firstname:"ilyes",
-        familyname:"arabet",
-        email:"arabetilyes@gmail.com",
+export default function ScheduleManage() {
+    const sessions = [{
+        level:"L2",
+        group:"G1",
         major:"computer science",
-        level:"L2"
+        time:"11:00-12:00",
+        date:"23/09/2023"
     },{
-        firstname:"ilyes",
-        familyname:"arabet",
-        email:"arabetilyes@gmail.com",
+        level:"L2",
+        group:"G1",
         major:"computer science",
-        level:"L2"
+        time:"11:00-12:00",
+        date:"23/09/2023"
     },{
-        firstname:"ilyes",
-        familyname:"arabet",
-        email:"arabetilyes@gmail.com",
+        level:"L2",
+        group:"G1",
         major:"computer science",
-        level:"L2"
+        time:"11:00-12:00",
+        date:"23/09/2023"
     },{
-        firstname:"ilyes",
-        familyname:"arabet",
-        email:"arabetilyes@gmail.com",
+        level:"L2",
+        group:"G1",
         major:"computer science",
-        level:"L2"
-    }];
+        time:"11:00-12:00",
+        date:"23/09/2023"
+    },];
     return (
     <main className="w-full h-full backgroundColor">
         <div className=' rounded-full h-12 w-12 blueColor absolute right-10 top-7'>
@@ -92,40 +92,34 @@ export default function StudentsManage() {
                     
             </div>
             <div className='basis-4/5 flex flex-col justify-center items-center space-y-6'>
-                <h1 className=" underline text-3xl font-bold">Students</h1>
-                <Popover>
+                <h1 className=" underline text-3xl font-bold">Schedule</h1>
+                <div className=" flex flex-row justify-between">
+                    <Button variant="outline" className=" relative right-1/3 text-white font-semibold bg-green-500 hover:text-green-500 hover:border-2 hover:border-solid hover:border-green-500">Enter Excel file</Button>              
+                    <Popover>
                     <PopoverTrigger asChild>
-                    <Button variant="outline" className=" relative left-1/3 text-white font-semibold bg-green-500 hover:text-green-500 hover:border-2 hover:border-solid hover:border-green-500">Add a new Student</Button>
+                    <Button variant="outline" className=" relative left-1/3 text-white font-semibold bg-green-500 hover:text-green-500 hover:border-2 hover:border-solid hover:border-green-500">Add a new session</Button>
                     </PopoverTrigger>
                     <PopoverContent className="w-80">
                     <div className="grid gap-4">
                         <div className="space-y-2">
-                        <h4 className="font-medium leading-none">Student</h4>
+                        <h4 className="font-medium leading-none">Session</h4>
                         <p className="text-sm text-muted-foreground">
-                            you can add a new Students from here
+                            you can add a new session from here
                         </p>
                         </div>
                         <div className="grid gap-2">
                         <div className="grid grid-cols-3 items-center gap-4">
-                            <Label htmlFor="firstname">First Name</Label>
+                            <Label htmlFor="level">Level</Label>
                             <Input
-                            id="firstname"
+                            id="level"
                             defaultValue=""
                             className="col-span-2 h-8"
                             />
                         </div>
                         <div className="grid grid-cols-3 items-center gap-4">
-                            <Label htmlFor="familyname">Family Name</Label>
+                            <Label htmlFor="groupe">Groupe</Label>
                             <Input
-                            id="familyname"
-                            defaultValue=""
-                            className="col-span-2 h-8"
-                            />
-                        </div>
-                        <div className="grid grid-cols-3 items-center gap-4">
-                            <Label htmlFor="email">Email</Label>
-                            <Input
-                            id="email"
+                            id="groupe"
                             defaultValue=""
                             className="col-span-2 h-8"
                             />
@@ -139,17 +133,17 @@ export default function StudentsManage() {
                             />
                         </div>
                         <div className="grid grid-cols-3 items-center gap-4">
-                            <Label htmlFor="level">level</Label>
+                            <Label htmlFor="time">Time</Label>
                             <Input
-                            id="level"
+                            id="time"
                             defaultValue=""
                             className="col-span-2 h-8"
                             />
                         </div>
                         <div className="grid grid-cols-3 items-center gap-4">
-                            <Label htmlFor="group">group</Label>
+                            <Label htmlFor="date">Date</Label>
                             <Input
-                            id="group"
+                            id="date"
                             defaultValue=""
                             className="col-span-2 h-8"
                             />
@@ -160,28 +154,31 @@ export default function StudentsManage() {
                     </div>
                     </PopoverContent>
                 </Popover>
+                </div>
+                
             <Table>
                     <TableHeader>
                     <TableRow className="bg-slate-600 text-lg ">
-                        <TableHead className="font-bold text-white">First name</TableHead>
-                        <TableHead className="font-bold text-white">Family name</TableHead>
-                        <TableHead className="font-bold text-white">Email</TableHead>
-                        <TableHead className="font-bold text-white" >Major</TableHead>
-                        <TableHead className="font-bold text-white" >Level</TableHead>
-                        <TableHead className="font-bold text-white" >Group</TableHead>
+                        <TableHead className="font-bold text-white">Level</TableHead>
+                        <TableHead className="font-bold text-white">Groupe</TableHead>
+                        <TableHead className="font-bold text-white">Major</TableHead>
+                        <TableHead className="font-bold text-white" >Time</TableHead>
+                        <TableHead className="font-bold text-white" >Date</TableHead>
                         <TableHead className="font-bold text-white" >Details</TableHead>
                         <TableHead className="font-bold text-white" >Delete</TableHead>
 
                     </TableRow>
                     </TableHeader>
                     <TableBody>
-                        {teachers.map((item)=>{
+                        {sessions.map((item)=>{
                             return(
                                 <TableRow>
-                                    <TableCell className="font-medium ">{item.firstname}</TableCell>
-                                    <TableCell>{item.familyname}</TableCell>
-                                    <TableCell>{item.email}</TableCell>
-                                    <TableCell>{item.subject}</TableCell>
+                                    <TableCell className="font-medium ">{item.level}</TableCell>
+                                    <TableCell>{item.group}</TableCell>
+                                    <TableCell>{item.major}</TableCell>
+                                    <TableCell>{item.time}</TableCell>
+                                    <TableCell>{item.date}</TableCell>
+
                                     <TableCell>
                                             <Popover>
                                                 <PopoverTrigger asChild>
@@ -190,33 +187,25 @@ export default function StudentsManage() {
                                                 <PopoverContent className="w-80">
                                                 <div className="grid gap-4">
                                                     <div className="space-y-2">
-                                                    <h4 className="font-medium leading-none">Student</h4>
+                                                    <h4 className="font-medium leading-none">Session</h4>
                                                     <p className="text-sm text-muted-foreground">
-                                                        you can edit the Student informations here
+                                                        you can edit the sessions informations here
                                                     </p>
                                                     </div>
                                                     <div className="grid gap-2">
                                                     <div className="grid grid-cols-3 items-center gap-4">
-                                                        <Label htmlFor="firstname">First Name</Label>
+                                                        <Label htmlFor="level">Level</Label>
                                                         <Input
-                                                        id="firstname"
+                                                        id="level"
                                                         defaultValue={item.firstname}
                                                         className="col-span-2 h-8"
                                                         />
                                                     </div>
                                                     <div className="grid grid-cols-3 items-center gap-4">
-                                                        <Label htmlFor="familyname">Family Name</Label>
+                                                        <Label htmlFor="group">Groupe</Label>
                                                         <Input
-                                                        id="familyname"
+                                                        id="group"
                                                         defaultValue={item.familyname}
-                                                        className="col-span-2 h-8"
-                                                        />
-                                                    </div>
-                                                    <div className="grid grid-cols-3 items-center gap-4">
-                                                        <Label htmlFor="email">Email</Label>
-                                                        <Input
-                                                        id="email"
-                                                        defaultValue={item.email}
                                                         className="col-span-2 h-8"
                                                         />
                                                     </div>
@@ -224,23 +213,23 @@ export default function StudentsManage() {
                                                         <Label htmlFor="major">Major</Label>
                                                         <Input
                                                         id="major"
-                                                        defaultValue={item.major}
+                                                        defaultValue={item.email}
                                                         className="col-span-2 h-8"
                                                         />
                                                     </div>
                                                     <div className="grid grid-cols-3 items-center gap-4">
-                                                        <Label htmlFor="level">Level</Label>
+                                                        <Label htmlFor="time">Time</Label>
                                                         <Input
-                                                        id="level"
-                                                        defaultValue="L2"
+                                                        id="time"
+                                                        defaultValue={item.numberOfChildren}
                                                         className="col-span-2 h-8"
                                                         />
                                                     </div>
                                                     <div className="grid grid-cols-3 items-center gap-4">
-                                                        <Label htmlFor="group">group</Label>
+                                                        <Label htmlFor="date">Date</Label>
                                                         <Input
-                                                        id="group"
-                                                        defaultValue="G1"
+                                                        id="date"
+                                                        defaultValue={item.children}
                                                         className="col-span-2 h-8"
                                                         />
                                                     </div>
