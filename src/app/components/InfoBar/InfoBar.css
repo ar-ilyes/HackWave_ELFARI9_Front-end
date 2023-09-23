@@ -2,10 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #2979FF;
   border-radius: 4px 4px 0 0;
   height: 60px;
   width: 100%;
+  border-bottom: solid 1px black;
 }
 
 .leftInnerContainer {
@@ -13,7 +13,6 @@
   display: flex;
   align-items: center;
   margin-left: 5%;
-  color: white;
 }
 
 .rightInnerContainer {
