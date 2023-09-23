@@ -1,9 +1,9 @@
-import Sidebar from '../components/Sidebar';
-import avatar from "../assets/avatar.png";
+import Sidebar from '@/app/components/Sidebar';
+import avatar from "@/app/assets/avatar.png";
 import Image from 'next/image';
 import Link from 'next/link';
-import logo from '../assets/logo.png';
-import notifications from "../assets/notifications.png"
+import logo from '@/app/assets/logo.png';
+import notifications from "@/app/assets/notifications.png"
 
 
 export default function Student() {

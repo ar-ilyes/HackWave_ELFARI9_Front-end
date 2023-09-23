@@ -12,7 +12,7 @@ export default function Home() {
           <p className=' font-medium text-xl w-3/4'>Join our platform and get ready to embark on a journey of educational excellence and seamless collaboration.</p>
         </div>
         <div className=' w-full h-full  flex justify-center items-center'>
-          <Image src={HeroImage} className=' w-3/4 mt-20 '></Image>
+          <Image src={HeroImage} alt='Hero image' className=' w-3/4 mt-20 '></Image>
         </div>
       </div>
     </main>
