@@ -1,4 +1,4 @@
-import avatar from "../assets/avatar.png";
+import avatar from "@/app/assets/avatar.png";
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -10,7 +10,7 @@ export default function Teacher() {
             <div className=' basis-1/5 blueColor flex flex-col justify-center items-center space-y-10 '>
                 {/* <Image src={logo}></Image> */}
                 <div className='flex flex-col justify-center items-center'>
-                    <Image src={avatar} className="rounded-full"></Image>
+                    <Image src={avatar} alt="avatar" className="rounded-full"></Image>
                     <p className=' text-white font-semibold'>Bouacha Chamil</p>
                     <p className=' text-slate-400'>lc_bouacha@esi.dz</p>
                 </div>

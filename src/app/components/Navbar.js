@@ -3,7 +3,7 @@ import logo from '../assets/logo.png';
 import Link from 'next/link';
 const Navbar =()=>{
     return (<div className='w-full blueColor flex flex-row items-center justify-between absolute'>
-    <Link href="/"><Image src={logo} className='mx-5'></Image></Link>
+    <Link href="/"><Image src={logo} alt='logo' className='mx-5'></Image></Link>
     <div className='flex justify-center items-center space-x-6 mx-4 py-2 '>
     <button className='yellowTextColor text-lg border-none hover:scale-110 transition-all duration-500'>contact</button>
     <button className='yellowTextColor text-lg border-none hover:scale-110 transition-all duration-500'>help</button>
