@@ -1,4 +1,4 @@
-import avatar from "../../assets/avatar.png";
+import avatar from "@/app/assets/avatar.png";
 import Image from 'next/image';
 import Link from 'next/link';
 

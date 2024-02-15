@@ -1,4 +1,4 @@
-import avatar from "../../assets/avatar.png";
+import avatar from "@/app/assets/avatar.png";
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -50,7 +50,7 @@ export default function Subject() {
                         type="button"
                         data-ripple-dark="true"
                         >
-                        <Link href="/student/subjects/1">details</Link>
+                        <Link href="/students/ilyes/subjects/1">details</Link>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
